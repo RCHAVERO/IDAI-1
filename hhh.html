@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recibo Telefónico</title>
+    <style>
+        body {
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .form-container {
+            background-color: #89ee81;
+            padding: 20px;
+            border: 2px solid #000;
+            width: 300px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        .form-container input[type="text"], .form-container select {
+            width: 90%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-container input[type="radio"], .form-container input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        .form-container button {
+            background-color: #ccc;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .form-container button:hover {
+            background-color: #bbb;
+        }
+    </style>
+    <script>
+        function mostrarMensaje() {
+            alert("GRACIAS POR TU PAGO");
+        }
+    </script>
+</head>
+<body>
+    <div class="form-container">
+        <h3>RECIBO TELEFÓNICO</h3>
+        <p>Minutos de Celular (1.00 c/u):</p>
+        <input type="text" name="minutos" pattern="[0-9]+" placeholder="Ingresa los minutos" required>
+
+        <p>TIPO DE PLAN</p>
+        <input type="radio" name="plan" value="telefono" required> Solo teléfono<br>
+        <input type="radio" name="plan" value="telefono_internet"> Teléfono + Internet<br>
+        <input type="radio" name="plan" value="telefono_internet_tv"> Teléfono + Internet + TV<br>
+
+        <p>OTROS SERVICIOS</p>
+        <input type="checkbox" name="servicios" value="antivirus"> Antivirus<br>
+        <input type="checkbox" name="servicios" value="nube"> Servicio de Nube<br>
+        <input type="checkbox" name="servicios" value="web"> Web Services<br>
+
+        <p>PAQUETES</p>
+        <select name="paquete" required>
+            <option value="">Seleccione un paquete</option>
+            <option value="residencial">RESIDENCIAL</option>
+            <option value="pymes">PYMES</option>
+            <option value="empresas">EMPRESAS</option>
+        </select><br><br>
+
+        <button type="button" onclick="mostrarMensaje()">CALCULAR</button>
+    </div>
+</body>
+</html>
