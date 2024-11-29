@@ -1,11 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina Principal</title>
+    <title>DeporteUN</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <!-- Encabezado -->
+    <header>
+        <a href="images/logoun.png" class="logo">
+            <img src="images/logoun.png" alt="Logo Universidad del Norte" class="logo-img">
+            DeporteUN
+        </a>
+        
+        <nav>
+            <a href="#section-1">Fútbol</a>
+            <a href="#section-2">Tochito</a>
+            <a href="#section-3">Ajedrez</a>
+            <a href="#section-4">Voleibol</a>
+            <a href="#section-5">Tenis de Mesa</a>
+        </nav>
+    </header>
+
+    <!-- Secciones deportivas -->
+    <div id="section-1" class="section section-1">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1>Fútbol</h1>
+            <p>Vive la pasión del deporte más popular del mundo.</p>
+            <div class="buttons">
+                <a href="masinformacion.html">Más Información</a>
+                <a href="proximascompetencias.html">Proximas Competencias</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="section-2" class="section section-2">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1>Tochito</h1>
+            <p>Velocidad y estrategia en el campo de juego.</p>
+            <div class="buttons">
+                <a href="masinformacion.html">Más Información</a>
+                <a href="proximascompetencias.html">Proximas competencias</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="section-3" class="section section-3">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1>Ajedrez</h1>
+            <p>El deporte de la mente en su máxima expresión.</p>
+            <div class="buttons">
+                <a href="masinformacion.html">Más informacion</a>
+                <a href="proximascompetencias.html">Proximas competencias</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="section-4" class="section section-4">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1>Voleibol</h1>
+            <p>La fuerza del equipo.</p>
+            <div class="buttons">
+                <a href="masinformacion.html">Más Información</a>
+                <a href="proximascompetencias.html">Proximas competencias</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="section-5" class="section section-5">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1>Tenis de Mesa</h1>
+            <p>Mejora tus reflejos con el equipo de tenis de mesa.</p>
+            <div class="buttons">
+                <a href="masinformacion.html">Más Información</a>
+                <a href="proximascompetencias.html">Proximas competencias</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ubicación -->
+    <section id="location">
+        <h2>Ubicación del Campo</h2>
+        <p>Encuentra el campus deportivo en la siguiente dirección:</p>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d713.4259223845962!2d-100.33010310182388!3d25.6898139240604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662957d7abd553b%3A0x6fddf1ef216b5b8c!2sCampus%20deportivo%20-%20Universidad%20del%20Norte!5e0!3m2!1ses-419!2smx!4v1732717938389!5m2!1ses-419!2smx" 
+            width="600" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2024 Universidad del Norte. Todos los derechos reservados.Contacto:+52 812345678</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
