@@ -1,0 +1,22 @@
+{
+  "name": "rust-discord-bot",
+  "version": "1.0.0",
+  "description": "Bot de Discord para verificar perfiles de jugadores de Rust",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "node test.js"
+  },
+  "keywords": ["discord", "bot", "rust", "steam", "gaming"],
+  "author": "Tu nombre",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.14.1",
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}

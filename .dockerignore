@@ -1,0 +1,19 @@
+# Ignorar archivos innecesarios en el deploy
+node_modules/
+npm-debug.log*
+.npm
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+logs/
+*.log
+.DS_Store
+Thumbs.db
+.vscode/
+.git/
+README.md
+*.md
+ecosystem.config.js
+prepare-cloud.bat
+RAILWAY-TUTORIAL.md
